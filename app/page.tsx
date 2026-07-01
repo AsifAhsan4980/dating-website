@@ -143,7 +143,7 @@ function IntroStep({ onNext }: { onNext: () => void }) {
       <div className="flex items-center gap-2 mb-1">
         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-base shadow-md">💝</div>
         <div>
-          <p className="text-pink-700 font-bold text-sm leading-none">Someone special</p>
+          <p className="text-pink-700 font-bold text-sm leading-none">Prova</p>
           <p className="text-pink-400 text-xs">is typing…</p>
         </div>
       </div>
