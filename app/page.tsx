@@ -139,6 +139,20 @@ function IntroStep({ onNext }: { onNext: () => void }) {
 
   return (
     <div className="w-full flex flex-col gap-3 text-left">
+      {/* Prova's photo header */}
+      <div className="flex flex-col items-center gap-2 mb-3">
+        <div className="relative">
+          <img
+            src="/prova.jpg"
+            alt="Prova"
+            className="w-28 h-28 rounded-full object-cover shadow-xl border-4 border-pink-200"
+            style={{ animation: "popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards" }}
+          />
+          <div className="absolute -bottom-1 -right-1 text-2xl" style={{ animation: "heartbeat 1.4s ease-in-out infinite" }}>💕</div>
+        </div>
+        <p className="text-pink-500 text-xs font-semibold uppercase tracking-widest">For you, Prova 💝</p>
+      </div>
+
       {/* Sender badge */}
       <div className="flex items-center gap-2 mb-1">
         <div className="w-9 h-9 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-base shadow-md">💝</div>
@@ -541,7 +555,14 @@ function CelebrationStep({ date, time }: { date: string; time: TimeState }) {
         See you then. I&apos;m already nervous. 😅
       </p>
 
-      <div className="text-5xl" style={{ animation: "heartbeat 1s ease-in-out infinite" }}>💗</div>
+      <div className="relative" style={{ animation: "popIn 0.5s 1s cubic-bezier(0.34,1.56,0.64,1) both" }}>
+        <img
+          src="/prova.jpg"
+          alt="Prova"
+          className="w-24 h-24 rounded-full object-cover shadow-xl border-4 border-pink-300"
+        />
+        <div className="absolute -bottom-1 -right-1 text-2xl" style={{ animation: "heartbeat 1s ease-in-out infinite" }}>💗</div>
+      </div>
     </div>
   );
 }

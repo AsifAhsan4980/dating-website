@@ -13,8 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://prova.asifahsan.com"),
   title: "Will you go on a date with me? 💝",
-  description: "A very important question.",
+  description: "A very important question for Prova… 🌹",
+  openGraph: {
+    title: "Will you go on a date with me? 💝",
+    description: "Prova… I have something to ask you 🥺",
+    url: "https://prova.asifahsan.com",
+    siteName: "For Prova",
+    images: [
+      {
+        url: "/prova.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "For Prova 💕",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Will you go on a date with me? 💝",
+    description: "Prova… I have something to ask you 🥺",
+    images: ["/prova.jpg"],
+  },
+  icons: {
+    icon: "/prova.jpg",
+  },
 };
 
 export default function RootLayout({
